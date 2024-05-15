@@ -102,7 +102,7 @@ func TestOpenDeviceWithFileDescriptor(t *testing.T) {
 	ctx := NewContext()
 	defer ctx.Close()
 
-	fd, err := syscall.Open("/dev/bus/usb/001/003", syscall.O_RDWR, 0)
+	fd, err := syscall.Open("/dev/bus/usb/001/002", syscall.O_RDWR, 0)
 	if err != nil {
 
 		t.Fatal(err)
